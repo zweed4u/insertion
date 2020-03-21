@@ -36,6 +36,11 @@ print(f"Iterative insertion sort took {(end_time-start_time)*1000}ms")
 
 
 def insertionSortRecurse(arr):
+    """
+    Not necessarily a proper implementation as this recursively goes 
+    to the beginning each time there is a swap instead of just 
+    continually comparing to previous numbers.
+    """
     index = 0
     while index < len(arr):
         if index == len(arr) - 1:
